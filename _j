@@ -1,4 +1,5 @@
-#compdef j
+SHORTCUT=${AUTOJUMP_SHORTCUT:-j}
+#compdef $SHORTCUT
 
 cur=${words[2, -1]}
 
