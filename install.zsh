@@ -1,4 +1,21 @@
 #! /bin/zsh
+
+#Copyright Joel Schaerer 2008, 2009
+#This file is part of autojump
+
+#autojump is free software: you can redistribute it and/or modify
+#it under the terms of the GNU General Public License as published by
+#the Free Software Foundation, either version 3 of the License, or
+#(at your option) any later version.
+#
+#autojump is distributed in the hope that it will be useful,
+#but WITHOUT ANY WARRANTY; without even the implied warranty of
+#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#GNU General Public License for more details.
+#
+#You should have received a copy of the GNU General Public License
+#along with autojump.  If not, see <http://www.gnu.org/licenses/>.
+
 # applet icon
 sudo mkdir -p /usr/share/autojump/
 sudo cp icon.png /usr/share/autojump/
@@ -18,7 +35,7 @@ if [ -d "/etc/profile.d" ]; then
     sudo cp autojump.zsh /etc/profile.d/
     sudo cp autojump.sh /etc/profile.d/
     echo "Remember to add the line" 
-    echo "    source /etc/profile.d/autojump.bash"
+    echo "    source /etc/profile.d/autojump.zsh"
     echo "or"
     echo "    source /etc/profile"
     echo "to your ~/.zshrc if it's not there already"
